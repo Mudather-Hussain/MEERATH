@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #263445;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.header {
+    background: #102b46;
+    color: white;
+    padding: 18px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    font-size: 35px;
+    color: #e6b85c;
+}
+
+.logo h2 {
+    color: #e6b85c;
+}
+
+.logo small {
+    font-size: 11px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a,
+.language a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+.language a:hover {
+    color: #e6b85c;
+}
+
+.hero {
+    background: linear-gradient(120deg, #102b46, #24577b);
+    color: white;
+    padding: 90px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 18px 0;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    color: #e6b85c;
+    letter-spacing: 2px;
+}
+
+.hero-icon {
+    font-size: 140px;
+    color: #e6b85c;
+}
+
+.btn {
+    display: inline-block;
+    background: #e6b85c;
+    color: #102b46;
+    padding: 12px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.secondary {
+    background: white;
+}
+
+.features {
+    padding-top: 65px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+    color: #102b46;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.card-icon {
+    font-size: 35px;
+    color: #d3a13f;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #102b46;
+}
+
+.about {
+    padding-bottom: 40px;
+    text-align: center;
+    color: #9b6415;
+}
+
+footer {
+    background: #102b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-icon {
+        font-size: 90px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.calculator-page {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+.calculator-page > h1 {
+    color: #102b46;
+    margin-bottom: 10px;
+}
+
+.calculator-page > p {
+    margin-bottom: 25px;
+}
+
+.form-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-section h2 {
+    color: #102b46;
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-section input,
+.form-section select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccd4df;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+.heir-row {
+    border: 1px solid #e0e5eb;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.submit-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.notice {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.success {
+    background: #e3f5e9;
+    color: #176b35;
+}
+
+.error {
+    background: #fde8e8;
+    color: #a12626;
+}
+
+@media (max-width: 600px) {
+    .form-section {
+        padding: 15px;
+    }
+}
+.cases-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 650px;
+    background: white;
+}
+
+.cases-table th {
+    background: #102b46;
+    color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+.cases-table td {
+    padding: 13px;
+    border-bottom: 1px solid #e0e5eb;
+    text-align: center;
+}
+
+.cases-table tr:hover {
+    background: #f5f7fb;
+}
+
+.details-link {
+    display: inline-block;
+    background: #e6b85c;
+    color: #102b46;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
